@@ -101,6 +101,7 @@ public class ArtifactResolver
 
         repositorySystemSession.setTransferListener(new ConsoleTransferListener());
         repositorySystemSession.setRepositoryListener(new ConsoleRepositoryListener());
+        repositorySystemSession.setOffline(true);
 
         List<RemoteRepository> repositories = new ArrayList<>(remoteRepositoryUris.size());
         int index = 0;
